@@ -1,0 +1,17 @@
+.header{
+    background-color: #132B47;
+    color: white;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #132B47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collection{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

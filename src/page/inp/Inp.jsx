@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useStore } from '../../zustand/useStore';
 import { useNavigate } from 'react-router-dom';
+import "./inp.css"
 
 const Inp = () => {
   const { addCar, cars } = useStore();
-  const [name, setName] = useState('');
-  const [price, setPrice] = useState('');
-  const [img, setImg] = useState('');
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
+  const [img, setImg] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -29,38 +30,35 @@ const Inp = () => {
   return (
     <div className="addcar-wrapper">
       <div className="addcar-form">
-        <h2 className="addcar-title">Add a new car</h2>
+        <h2 className="addcar-title">Add your car</h2>
         <form onSubmit={handleSubmit} className="form-body">
           <div>
-            <label className="form-label">Name:</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-input"
-              placeholder="Enter car's name..."
+              placeholder="Enter car name"
               required
             />
           </div>
           <div>
-            <label className="form-label">Price:</label>
             <input
               type="number"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
               className="form-input"
-              placeholder="Enter car's price..."
+              placeholder="Enter car price"
               required
             />
           </div>
           <div className="form-field">
-            <label className="form-label">Image (URL):</label>
             <input
               type="text"
               value={img}
               onChange={(e) => setImg(e.target.value)}
               className="form-input"
-              placeholder="Place your car's image URL..."
+              placeholder="Enter your car img"
               required
             />
           </div>

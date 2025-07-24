@@ -17,7 +17,6 @@ const Card = () => {
               <p className="card-price">
                 Price: <span>{car.price} USD</span>
               </p>
-              <p className="card-id">ID: {car.id}</p>
               <button onClick={() => removeCar(car.id)} className="card-delete-btn">Delete</button>
             </div>
           </div>

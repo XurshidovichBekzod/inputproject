@@ -8,10 +8,10 @@
 .addcar-form {
   width: 400px;
   margin: 0 auto;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,49 +19,52 @@
 }
 
 .addcar-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .form-body {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .form-label {
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 4px;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .form-input {
   width: 100%;
   border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
   outline: none;
 }
 
-
 .form-field {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .form-buttons {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .btn {
   width: 100%;
-  padding: 0.5rem 0;
-  border-radius: 0.5rem;
-  color: white;
-  transition: background-color 0.3s;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
   outline: none;
@@ -72,7 +75,7 @@
 }
 
 .btn-blue:hover {
-  background-color: #132B47;
+  background-color: #0e2135;
 }
 
 .btn-red {
@@ -80,5 +83,5 @@
 }
 
 .btn-red:hover {
-  background-color: #132B47;
+  background-color: #0e2135;
 }

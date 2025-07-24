@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useStore } from '../../zustand/useStore';
 import { useNavigate } from 'react-router-dom';
-import "./inp.css"
+import "./Input.css"
 
 const Inp = () => {
   const { addCar, cars } = useStore();

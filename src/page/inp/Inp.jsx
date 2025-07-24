@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import "./Input.css"
 
 const Inp = () => {
-  const { addCar, cars } = useStore();
+  const { add, cars } = useStore();
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [img, setImg] = useState("");
@@ -20,7 +20,7 @@ const Inp = () => {
       image: img,
     };
 
-    addCar(newCar);
+    add(newCar);
     setName('');
     setPrice('');
     setImg('');

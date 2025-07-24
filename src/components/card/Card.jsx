@@ -3,7 +3,7 @@ import { useStore } from '../../zustand/useStore';
 import "./Card.css"
 
 const Card = () => {
-  const { cars, deleteCar } = useStore();
+  const { cars, removeCar } = useStore();
   return (
     <div className="container">
       <div className="card-grid">
@@ -18,7 +18,7 @@ const Card = () => {
                 Price: <span>{car.price} USD</span>
               </p>
               <p className="card-id">ID: {car.id}</p>
-              <button onClick={() => deleteCar(car.id)} className="card-delete-btn">Delete</button>
+              <button onClick={() => removeCar(car.id)} className="card-delete-btn">Delete</button>
             </div>
           </div>
         ))}

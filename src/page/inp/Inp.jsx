@@ -24,7 +24,6 @@ const Inp = () => {
     setName('');
     setPrice('');
     setImg('');
-    navigate('/');
   };
 
   return (
@@ -63,7 +62,7 @@ const Inp = () => {
             />
           </div>
           <div className="form-buttons">
-            <button type="submit" className="btn btn-blue">Add</button>
+            <button type="submit" className="btn btn-blue" onClick={() => navigate('/')}>Add</button>
             <button type="button" className="btn btn-red" onClick={() => navigate('/')}>Go back</button>
           </div>
         </form>

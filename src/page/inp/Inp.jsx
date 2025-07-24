@@ -14,7 +14,7 @@ const Inp = () => {
     e.preventDefault();
 
     const newCar = {
-      id: Date.now(),
+      id: new Date().getTime(),
       name,
       price,
       image: img,
